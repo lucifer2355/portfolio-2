@@ -4,6 +4,8 @@ import Drawer from "rc-drawer";
 const Header = () => {
   return (
     <Drawer open={true}>
+      <div></div>
+
       <div>
         <p>Home</p>
         <p>About</p>
