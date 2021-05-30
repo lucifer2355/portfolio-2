@@ -1,8 +1,12 @@
+import React, { useState } from "react";
 import Head from "next/head";
+import { MenuIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 
 export default function Home() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <div>
       <Head>
@@ -12,7 +16,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header />
+        <div
+          className='absolute right-0 cursor-pointer'
+          onClick={() => setIsDrawerOpen((preState) => !preState)}
+        >
+          <MenuIcon className='h-8' />
+        </div>
+        <Header
+          open={isDrawerOpen}
+          drawerToggle={() => setIsDrawerOpen((preState) => !preState)}
+        />
       </main>
     </div>
   );
