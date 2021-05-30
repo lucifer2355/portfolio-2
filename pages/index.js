@@ -16,15 +16,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <div
-          className='absolute right-0 cursor-pointer'
-          onClick={() => setIsDrawerOpen((preState) => !preState)}
-        >
-          <MenuIcon className='h-8' />
-        </div>
         <Header
           open={isDrawerOpen}
           drawerToggle={() => setIsDrawerOpen((preState) => !preState)}
+          drawerHandler={
+            <div className='absolute right-0 cursor-pointer'>
+              <MenuIcon className='h-8' />
+            </div>
+          }
         />
       </main>
     </div>

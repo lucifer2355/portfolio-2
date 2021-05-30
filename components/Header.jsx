@@ -1,35 +1,41 @@
 import React from "react";
 import Image from "next/image";
-import Drawer from "rc-drawer";
+import RcDrawer from "rc-drawer";
 
-const Header = ({ open, drawerToggle }) => {
+const Header = ({ open, drawerToggle, drawerHandler }) => {
   return (
-    <Drawer
-      width={"0px"}
-      open={open}
-      drawerToggle={drawerToggle}
-      height={"100vh"}
-      duration={"0.3s"}
-      showMask={false}
-    >
-      <div>
-        <Image
-          layout='fixed'
-          src={require("../assets/images/me.png")}
-          height={130}
-          width={130}
-          className='rounded-full overflow-hidden'
-        />
-      </div>
+    <>
+      <RcDrawer
+        width={"320px"}
+        open={open}
+        onClose={drawerToggle}
+        height={"100vh"}
+        duration={"0.4s"}
+        handler={false}
+        level={null}
+        showMask={false}
+      >
+        <div>
+          <Image
+            layout='fixed'
+            src={require("../assets/images/me.png")}
+            height={130}
+            width={130}
+            className='rounded-full overflow-hidden'
+          />
+        </div>
 
-      <div>
-        <p>Home</p>
-        <p>About</p>
-        <p>Resume</p>
-        <p>Portfolios</p>
-        <p>Contact</p>
-      </div>
-    </Drawer>
+        <div>
+          <p>Home</p>
+          <p>About</p>
+          <p>Resume</p>
+          <p>Portfolios</p>
+          <p>Contact</p>
+        </div>
+      </RcDrawer>
+
+      <div onClick={drawerToggle}>{drawerHandler}</div>
+    </>
   );
 };
 
