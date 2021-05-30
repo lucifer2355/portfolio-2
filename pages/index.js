@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import { MenuIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 
@@ -21,7 +21,11 @@ export default function Home() {
           drawerToggle={() => setIsDrawerOpen((preState) => !preState)}
           drawerHandler={
             <div className='absolute right-0 cursor-pointer'>
-              <MenuIcon className='h-8' />
+              {!isDrawerOpen ? (
+                <MenuIcon className='h-8 xl:hidden' />
+              ) : (
+                <XIcon className='h-8 xl:hidden' />
+              )}
             </div>
           }
         />

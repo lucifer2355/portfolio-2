@@ -14,23 +14,26 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
         handler={false}
         level={null}
         showMask={false}
+        className='xl:hidden'
       >
-        <div>
-          <Image
-            layout='fixed'
-            src={require("../assets/images/me.png")}
-            height={130}
-            width={130}
-            className='rounded-full overflow-hidden'
-          />
-        </div>
+        <div className='border-r-2 w-60 h-screen border-gray-400 flex flex-col items-center'>
+          <div>
+            <Image
+              layout='fixed'
+              src={require("../assets/images/me.png")}
+              height={130}
+              width={130}
+              className='rounded-full overflow-hidden'
+            />
+          </div>
 
-        <div>
-          <p>Home</p>
-          <p>About</p>
-          <p>Resume</p>
-          <p>Portfolios</p>
-          <p>Contact</p>
+          <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Resume</p>
+            <p>Portfolios</p>
+            <p>Contact</p>
+          </div>
         </div>
       </RcDrawer>
 
