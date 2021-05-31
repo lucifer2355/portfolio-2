@@ -30,7 +30,7 @@ export default function Home() {
           }
         />
 
-        <div className='flex justify-center items-center h-full bg-red-400'>
+        <div className='flex justify-center items-center h-screen'>
           <h1>
             Hi, I am <span>Dhruvil Gajjar</span>
           </h1>
