@@ -31,9 +31,10 @@ export default function Home() {
         />
 
         <div className='flex justify-center items-center h-screen'>
-          <h1>
-            Hi, I am <span>Dhruvil Gajjar</span>
-          </h1>
+          <div className='text-4xl text-center font-[nunito-sans]'>
+            <h1>Hi, I am</h1>
+            <h1 className='text-[##047FFF]'>Dhruvil Gajjar</h1>
+          </div>
         </div>
       </main>
     </div>

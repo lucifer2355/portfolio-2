@@ -9,7 +9,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      nunito: ["nunito-sans", "sans-serif"],
+      nunito: ["nunito-sans"],
+    },
+    colors: {
+      primary: "#047FFF",
     },
   },
   variants: {
