@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import RcDrawer from "rc-drawer";
 
 const Header = ({ open, drawerToggle, drawerHandler }) => {
@@ -30,9 +31,11 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
           </div>
 
           <div className='w-full h-52 justify-between text-lg uppercase font-thin text-gray-300 cursor-pointer inline-block'>
-            <ul className='flex flex-col text-justify h-52 justify-between w-full'>
-              <li className='text-center hover:bg-blue-400 hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500'>
-                Home
+            <ul className='flex flex-col text-justify space-y-4 w-full'>
+              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500'>
+                <Link href='/' className=''>
+                  Home
+                </Link>
               </li>
               <li>About</li>
               <li>Resume</li>
