@@ -15,12 +15,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>
+      <main className='relative'>
         <Header
           open={isDrawerOpen}
           drawerToggle={() => setIsDrawerOpen((preState) => !preState)}
           drawerHandler={
-            <div className='absolute right-0 cursor-pointer'>
+            <div className='absolute right-5 mt-5 cursor-pointer'>
               {!isDrawerOpen ? (
                 <MenuIcon className='h-8 xl:hidden' />
               ) : (
@@ -29,6 +29,12 @@ export default function Home() {
             </div>
           }
         />
+
+        <div className='flex justify-center items-center h-full bg-red-400'>
+          <h1>
+            Hi, I am <span>Dhruvil Gajjar</span>
+          </h1>
+        </div>
       </main>
     </div>
   );
