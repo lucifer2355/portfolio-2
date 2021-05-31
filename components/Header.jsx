@@ -32,15 +32,23 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
 
           <div className='w-full h-52 justify-between text-lg uppercase font-thin text-gray-300 cursor-pointer inline-block'>
             <ul className='flex flex-col text-justify space-y-4 w-full'>
-              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500'>
+              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
                 <Link href='/' className=''>
                   Home
                 </Link>
               </li>
-              <li>About</li>
-              <li>Resume</li>
-              <li>Portfolio</li>
-              <li>Contact</li>
+              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
+                About
+              </li>
+              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
+                Resume
+              </li>
+              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
+                Portfolio
+              </li>
+              <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
+                Contact
+              </li>
             </ul>
           </div>
         </div>
