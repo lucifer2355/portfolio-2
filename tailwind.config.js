@@ -11,9 +11,6 @@ module.exports = {
     fontFamily: {
       nunito: ["nunito-sans"],
     },
-    colors: {
-      primary: "#047FFF",
-    },
   },
   variants: {
     extend: {},
