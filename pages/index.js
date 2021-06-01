@@ -3,6 +3,7 @@ import Head from "next/head";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
+import BackgroundEffect from "../components/BackgroundEffect";
 
 export default function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
+      <BackgroundEffect />
       <main className='relative'>
         <Header
           open={isDrawerOpen}
@@ -30,7 +32,7 @@ export default function Home() {
           }
         />
 
-        <div className='flex justify-center items-center h-screen'>
+        <div className='flex justify-center items-center h-screen z-20'>
           <div className='text-4xl text-center font-[nunito-sans] md:flex'>
             <h1 className='md:mr-2'>Hi, I am</h1>
             <h1 className='text-blue-500 text-opacity-100 font-bold'>

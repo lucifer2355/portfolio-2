@@ -17,6 +17,7 @@
     "rc-drawer": "^4.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-tsparticles": "^1.27.0",
     "responsive-loader": "^2.3.0",
     "tailwind-scrollbar-hide": "^1.0.3",
     "tailwindcss-pseudo-elements": "^2.0.0"
