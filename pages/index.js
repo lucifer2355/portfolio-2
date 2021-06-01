@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-import Header from "../components/Header";
 import BackgroundEffect from "../components/BackgroundEffect";
+import MobileDrawer from "../components/MobileDrawer";
 
 export default function Home() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   return (
     <div>
       <Head>
@@ -16,29 +13,24 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <BackgroundEffect />
+      {/* <BackgroundEffect /> */}
       <main className='relative'>
-        <Header
-          open={isDrawerOpen}
-          drawerToggle={() => setIsDrawerOpen((preState) => !preState)}
-          drawerHandler={
-            <div className='absolute right-5 mt-5 cursor-pointer'>
-              {!isDrawerOpen ? (
-                <MenuIcon className='h-8 xl:hidden' />
-              ) : (
-                <XIcon className='h-8 xl:hidden' />
-              )}
-            </div>
-          }
-        />
+        <MobileDrawer />
 
-        <div className='flex justify-center items-center h-screen z-20'>
+        <div className='flex flex-col justify-center items-center h-screen'>
           <div className='text-4xl text-center font-[nunito-sans] md:flex'>
             <h1 className='md:mr-2'>Hi, I am</h1>
             <h1 className='text-blue-500 text-opacity-100 font-bold'>
               Dhruvil Gajjar
             </h1>
           </div>
+
+          <p className='w-10/12 text-justify font-mono mt-5'>
+            As a passionate Web & Cross platform mobile application developer, I
+            always prefer to build things or challenging projects. I have been
+            focusing on clean coding and morden, elegant mobile app &
+            user-friendly website design.
+          </p>
         </div>
       </main>
     </div>

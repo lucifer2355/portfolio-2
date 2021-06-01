@@ -6,7 +6,7 @@ const BackgroundEffect = () => {
   const [particlesLoaded, setParticlesLoaded] = useState();
 
   return (
-    <div className='absolute w-full'>
+    <div className='absolute w-full h-full'>
       <Particles
         id='tsparticles'
         init={particlesInit}
@@ -89,7 +89,7 @@ const BackgroundEffect = () => {
           },
           detectRetina: true,
         }}
-        className='h-full'
+        className='h-screen'
       />
     </div>
   );
