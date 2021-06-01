@@ -7,7 +7,7 @@ const about = () => {
   return (
     <>
       <MobileDrawer />
-      <div>
+      <div className='pl-4 pr-4 pt-10'>
         <Title title='ABOUT ME' />
       </div>
     </>
