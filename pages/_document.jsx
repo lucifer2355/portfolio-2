@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import MobileDrawer from "../components/MobileDrawer";
 
 export default class CustomDocument extends Document {
   render() {
