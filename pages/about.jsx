@@ -32,21 +32,31 @@ const about = () => {
           </span>
         </h1>
         <p className='text-gray-400 text-justify font-mono mt-3'>
-          As a passionate Web & Cross platform mobile application developer, I
-          always prefer to build things or challenging projects. I have been
-          focusing on clean coding and morden, elegant mobile app &
-          user-friendly website design.
+          I’m Dhruvil, a 22 years old self-taught Web & Mobile App developer,
+          from India. Middle of my college degree in "Information & Technology",
+          I got a job as a "developer", where I stayed for almost 2 years, and I
+          developed websites with Magento, developed mobile applications with
+          React-Native.
         </p>
 
         <PersonalInfo />
 
         <div className='mt-4'>
           <button
-            className='bg-blue-600 hover:bg-blue-800 focus:outline-none transform active:translate-y-1 rounded-md pt-1 pr-3 pl-3 pb-1 font-extralight'
-            onClick={() => console.log("download cv")}
+            className='bg-blue-600 hover:bg-blue-800 focus:outline-none transform active:translate-y-1 rounded-md pt-2 pb-2 pr-3 pl-3 font-extralight'
+            type='submit'
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/19m9FlGsTwwgRNIjrnY29EB5f8Sv3PEsS/view?usp=sharing"
+              )
+            }
           >
             DOWNLOAD CV
           </button>
+        </div>
+
+        <div className='mt-10'>
+          <Title title='SERVICES' />
         </div>
       </div>
     </>
