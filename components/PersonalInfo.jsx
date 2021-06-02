@@ -1,7 +1,7 @@
 import React from "react";
 
 const personalInfo = {
-  "Full Name": "Dhruvil",
+  "Full Name": "Dhruvil Gajjar",
   Age: "22 Years",
   Degree: "B.Tech (Information Technology)",
   Nationality: "Indian",
@@ -11,7 +11,20 @@ const personalInfo = {
 };
 
 const PersonalInfo = () => {
-  return <div>{Object.entries(personalInfo.map((p) => console.log(p)))}</div>;
+  return (
+    <div className='mt-4'>
+      {Object.keys(personalInfo).map(function(key, index) {
+        return (
+          <div className='text-gray-400 flex'>
+            <span className='flex w-24 justify-between'>
+              {key} <span>:</span>
+            </span>
+            <span className='ml-2'>{personalInfo[key]}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default PersonalInfo;

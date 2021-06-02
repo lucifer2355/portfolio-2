@@ -3,6 +3,7 @@ import React from "react";
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import aboutImage from "../assets/images/profile.jpeg";
+import PersonalInfo from "../components/PersonalInfo";
 
 const about = () => {
   return (
@@ -36,6 +37,8 @@ const about = () => {
           focusing on clean coding and morden, elegant mobile app &
           user-friendly website design.
         </p>
+
+        <PersonalInfo />
       </div>
     </>
   );
