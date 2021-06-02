@@ -31,7 +31,7 @@ const about = () => {
             Dhruvil Gajjar
           </span>
         </h1>
-        <p className='text-gray-400 text-justify font-mono mt-5'>
+        <p className='text-gray-400 text-justify font-mono mt-3'>
           As a passionate Web & Cross platform mobile application developer, I
           always prefer to build things or challenging projects. I have been
           focusing on clean coding and morden, elegant mobile app &

@@ -15,7 +15,7 @@ const PersonalInfo = () => {
     <div className='mt-4'>
       {Object.keys(personalInfo).map(function(key, index) {
         return (
-          <div className='text-gray-400 flex'>
+          <div key={index} className='text-gray-400 flex'>
             <span className='flex w-24 justify-between'>
               {key} <span>:</span>
             </span>
