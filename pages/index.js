@@ -13,7 +13,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <BackgroundEffect />
+      {/* <BackgroundEffect /> */}
       <main className='relative'>
         <MobileDrawer />
 

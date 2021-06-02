@@ -39,6 +39,15 @@ const about = () => {
         </p>
 
         <PersonalInfo />
+
+        <div className='mt-4'>
+          <button
+            className='bg-blue-600 hover:bg-blue-800 focus:outline-none transform active:translate-y-1 rounded-md pt-1 pr-3 pl-3 pb-1 font-extralight'
+            onClick={() => console.log("download cv")}
+          >
+            DOWNLOAD CV
+          </button>
+        </div>
       </div>
     </>
   );
