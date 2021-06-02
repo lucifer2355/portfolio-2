@@ -27,12 +27,10 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
           <div className='w-full h-screen flex items-center text-lg uppercase font-thin text-gray-300 cursor-pointer inline-block'>
             <ul className='flex flex-col text-justify space-y-4 w-full'>
               <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
-                <Link href='/' className=''>
-                  Home
-                </Link>
+                <Link href='/'>Home</Link>
               </li>
               <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
-                About
+                <Link href='/about'>About</Link>
               </li>
               <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
                 Resume
