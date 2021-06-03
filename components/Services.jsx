@@ -1,32 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import webDevSvg from "../assets/svg/painter-palette.svg";
-import codeSvg from "../assets/svg/code.svg";
-import mobileSvg from "../assets/svg/smartphone.svg";
+import { services } from "../data/services/services";
 
-const services = [
-  {
-    title: "Web Design",
-    icon: webDevSvg,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.",
-  },
-  {
-    title: "Web Development",
-    icon: codeSvg,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.",
-  },
-  {
-    title: "Mobile Application",
-    icon: mobileSvg,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.",
-  },
-];
-
-const Card = () => {
+const Services = () => {
   return (
     <div className='mt-12'>
       {services.map((service) => (
@@ -45,4 +22,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Services;

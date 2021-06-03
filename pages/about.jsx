@@ -4,7 +4,7 @@ import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import aboutImage from "../assets/images/profile.jpeg";
 import PersonalInfo from "../components/PersonalInfo";
-import Card from "../components/Card";
+import Services from "../components/Services";
 
 const About = () => {
   return (
@@ -57,7 +57,7 @@ const About = () => {
         </div>
 
         <Title title='SERVICES' />
-        <Card />
+        <Services />
       </div>
     </>
   );
