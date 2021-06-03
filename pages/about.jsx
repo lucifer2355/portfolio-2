@@ -4,6 +4,7 @@ import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import aboutImage from "../assets/images/profile.jpeg";
 import PersonalInfo from "../components/PersonalInfo";
+import Card from "../components/Card";
 
 const about = () => {
   return (
@@ -57,6 +58,7 @@ const about = () => {
 
         <div className='mt-10'>
           <Title title='SERVICES' />
+          <Card />
         </div>
       </div>
     </>

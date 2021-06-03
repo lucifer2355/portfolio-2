@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import webDevSvg from "../assets/svg/painter-palette.svg";
 import codeSvg from "../assets/svg/code.svg";
@@ -28,7 +29,11 @@ const services = [
 const Card = () => {
   return (
     <div>
-      <webDevSvg />
+      {services.map((service) => (
+        <div>
+          <Image src={service.icon} width={30} height={30} color='text-white' />
+        </div>
+      ))}
     </div>
   );
 };
