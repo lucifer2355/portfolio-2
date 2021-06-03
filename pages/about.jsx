@@ -14,7 +14,7 @@ const about = () => {
         <Title title='ABOUT ME' />
 
         <div
-          className='mt-8 h-80 flex justify-between'
+          className='mt-12 h-80 flex justify-between'
           style={{
             backgroundImage: `url(${aboutImage})`,
             backgroundSize: "cover",

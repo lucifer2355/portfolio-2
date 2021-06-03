@@ -28,7 +28,7 @@ const services = [
 
 const Card = () => {
   return (
-    <div className='mt-10'>
+    <div className='mt-12'>
       {services.map((service) => (
         <div
           className={
