@@ -8,10 +8,10 @@ const Resume = () => {
   return (
     <>
       <MobileDrawer />
-      <div className='pl-4 pr-4 pt-16'>
+      <div className='pl-4 pr-4 pt-1'>
         <Title title='MY SKILL' />
-
         <Skills />
+        <Title title='RESUME' />
       </div>
     </>
   );
