@@ -3,6 +3,7 @@ import React from "react";
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import Skills from "../components/Skills";
+import WorkAndQualifications from "../components/WorkAndQualifications";
 
 const Resume = () => {
   return (
@@ -12,6 +13,7 @@ const Resume = () => {
         <Title title='MY SKILL' />
         <Skills />
         <Title title='RESUME' />
+        <WorkAndQualifications />
       </div>
     </>
   );
