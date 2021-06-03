@@ -4,7 +4,7 @@ import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import Skills from "../components/Skills";
 
-const resume = () => {
+const Resume = () => {
   return (
     <>
       <MobileDrawer />
@@ -17,4 +17,4 @@ const resume = () => {
   );
 };
 
-export default resume;
+export default Resume;

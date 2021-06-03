@@ -6,7 +6,7 @@ import aboutImage from "../assets/images/profile.jpeg";
 import PersonalInfo from "../components/PersonalInfo";
 import Card from "../components/Card";
 
-const about = () => {
+const About = () => {
   return (
     <>
       <MobileDrawer />
@@ -65,4 +65,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
