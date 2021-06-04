@@ -9,12 +9,12 @@ module.exports = {
       screen: {
         "3xl": "2000px",
       },
+      inset: {
+        "-6.5": "-1.6rem",
+      },
     },
     fontFamily: {
       nunito: ["nunito-sans"],
-    },
-    inset: {
-      "-6.5": "-1.6rem",
     },
   },
   variants: {
