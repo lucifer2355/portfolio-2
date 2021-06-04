@@ -8,9 +8,11 @@ const WorkAndQualifications = () => {
         <BriefcaseIcon height={30} width={30} color='#ccc' />
         <span className='ml-3 text-2xl font-bold'>Working Experience</span>
       </div>
-      <div className='border-l-2 pl-4 ml-1 mt-5 border-gray-200 h-auto'>
-        <div className='w-11/12 flex flex-col'>
-          <span className='text-gray-400 text-lg'>2018 - Present</span>
+      <div className='border-l-2 pl-4 ml-1 mt-5 border-gray-200 h-auto relative'>
+        <div className='w-11/12 flex flex-col '>
+          <span className='text-gray-400 text-lg before:empty-content before:bg-[#10121B] before:h-4 before:w-4 before:rounded-xl before:absolute before:-left-2.5 before:top-2 before:border-4 before:border-gray-400'>
+            2018 - Present
+          </span>
           <span className='text-xl text-blue-500 text-opacity-100 font-bold'>
             Frontend Web Developer
           </span>
