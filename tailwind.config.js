@@ -13,6 +13,9 @@ module.exports = {
     fontFamily: {
       nunito: ["nunito-sans"],
     },
+    inset: {
+      "-6.5": "-1.6rem",
+    },
   },
   variants: {
     extend: {},

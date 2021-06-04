@@ -13,7 +13,7 @@ const WorkAndQualifications = () => {
       <div className='border-l-4 pl-4 ml-2 mt-5 border-[#2E344E] h-auto'>
         {workExperiences.map((workExperience) => (
           <div className='w-11/12 mt-5 flex flex-col relative'>
-            <span className='text-gray-400 text-lg before:empty-content before:bg-[#10121B] before:h-4 before:w-4 before:rounded-xl before:absolute before:-left-6 before:top-1.5 before:border-4 before:border-[#2E344E]'>
+            <span className='text-gray-400 text-lg before:empty-content before:bg-[#10121B] before:h-4 before:w-4 before:rounded-xl before:absolute before:-left-6.5 before:mt-1.5 before:border-4 before:border-[#2E344E]'>
               {workExperience.timeLine}
             </span>
             <span className='text-xl text-blue-500 text-opacity-100 font-bold'>
