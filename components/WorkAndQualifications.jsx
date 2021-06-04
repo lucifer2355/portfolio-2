@@ -14,10 +14,10 @@ const WorkAndQualifications = ({ title, Icon, data }) => {
               {workExperience.timeLine}
             </span>
             <span className='text-xl text-blue-500 text-opacity-100 font-bold'>
-              {workExperience.jobTitle}
+              {workExperience.title}
             </span>
             <span className='text-lg text-white font-thin'>
-              {workExperience.companyName}
+              {workExperience.organization}
             </span>
             <p className='text-justify text-gray-400 mt-3'>
               {workExperience.description}

@@ -1,11 +1,14 @@
 import React from "react";
+import Image from "next/image";
 import { BriefcaseIcon } from "@heroicons/react/outline";
 
+import bookSvg from "../assets/svg/book.svg";
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import Skills from "../components/Skills";
 import WorkAndQualifications from "../components/WorkAndQualifications";
 import { workExperiences } from "../data/resume/workExperiences";
+import { qualifications } from "../data/resume/qualifications";
 
 const Resume = () => {
   return (
@@ -19,6 +22,11 @@ const Resume = () => {
           title='Working Experience'
           Icon={<BriefcaseIcon height={30} width={30} color='#ccc' />}
           data={workExperiences}
+        />
+        <WorkAndQualifications
+          title='Educational Qualifications'
+          Icon={<Image src={bookSvg} width={30} height={30} />}
+          data={qualifications}
         />
       </div>
     </>
