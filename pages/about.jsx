@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <MobileDrawer />
-      <div className='pl-4 pr-4 pt-1'>
+      <div className='pl-4 pr-4 pt-1 mb-10'>
         <Title title='ABOUT ME' />
 
         <div
