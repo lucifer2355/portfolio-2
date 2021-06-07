@@ -30,14 +30,14 @@ const Resume = () => {
           data={qualifications}
         />
 
-        <Title title='COURSERS' />
+        <Title title='COURSES' />
         <div className='mt-10'>
           {courses.map((course) => (
             <a
               key={course.number}
               href={course.link}
               target='_blank'
-              className='block text-xl font-thin'
+              className='block text-xl font-thin mt-1'
             >
               {course.number}. {course.title}
             </a>
