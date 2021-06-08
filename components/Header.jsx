@@ -39,7 +39,7 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
                 <Link href='/portfolio'>Portfolio</Link>
               </li>
               <li className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'>
-                Contact
+                <Link href='/contact'>Contact</Link>
               </li>
             </ul>
           </div>
