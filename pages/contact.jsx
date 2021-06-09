@@ -4,6 +4,20 @@ import TextField from "@material-ui/core/TextField";
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 
+const styles = (theme) => ({
+  textField: {
+    width: "90%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    paddingBottom: 0,
+    marginTop: 0,
+    fontWeight: 500,
+  },
+  input: {
+    color: "white",
+  },
+});
+
 const contact = () => {
   return (
     <>
@@ -17,8 +31,28 @@ const contact = () => {
           <div>
             <TextField
               id='outlined-basic'
-              label='Outlined'
+              label='outlined'
               variant='outlined'
+              color='secondary'
+              style={{
+                background: "transparent",
+                outline: "none",
+                border: "1px solid #ccc",
+                borderRadius: 10,
+                overflow: "hidden",
+                
+              }}
+              InputProps={{
+                style: {
+                  color: "#ccc",
+                  fontFamily: "sans-serif",
+                  
+                },
+              }}
+              InputLabelProps={{
+                style: { color: "#ccc", fontSize: "1rem", },
+              }}
+              className='focus:border-0'
             />
           </div>
         </div>
