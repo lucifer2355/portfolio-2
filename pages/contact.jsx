@@ -24,25 +24,29 @@ const contact = () => {
               name='name'
               placeholder='Enter Your Name'
               className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               type='email'
-              name='name'
+              name='email'
               placeholder='Enter Your Email'
               className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type='text'
-              name='name'
+              name='subject'
               placeholder='Enter Your Subject'
               className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              onChange={(e) => setSubject(e.target.value)}
             />
             <textarea
               type='text'
-              name='name'
+              name='message'
               rows={5}
               placeholder='Enter Your Message'
               className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
 
