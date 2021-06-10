@@ -1,5 +1,4 @@
-import React from "react";
-import TextField from "@material-ui/core/TextField";
+import React, { useState } from "react";
 
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
@@ -29,30 +28,29 @@ const contact = () => {
           <h1 className='text-2xl font-extralight'>Get In Touch</h1>
 
           <div>
-            <TextField
-              id='outlined-basic'
-              label='outlined'
-              variant='outlined'
-              color='secondary'
-              style={{
-                background: "transparent",
-                outline: "none",
-                border: "1px solid #ccc",
-                borderRadius: 10,
-                overflow: "hidden",
-                
-              }}
-              InputProps={{
-                style: {
-                  color: "#ccc",
-                  fontFamily: "sans-serif",
-                  
-                },
-              }}
-              InputLabelProps={{
-                style: { color: "#ccc", fontSize: "1rem", },
-              }}
-              className='focus:border-0'
+            <input
+              type='text'
+              name='name'
+              placeholder='Enter Your Name'
+              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-11/12 mt-5 placeholder:text-gray-300'
+            />
+            <input
+              type='text'
+              name='name'
+              placeholder='Enter Your Name'
+              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-11/12 mt-5 placeholder:text-gray-300'
+            />
+            <input
+              type='text'
+              name='name'
+              placeholder='Enter Your Name'
+              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-11/12 mt-5 placeholder:text-gray-300'
+            />
+            <input
+              type='text'
+              name='name'
+              placeholder='Enter Your Name'
+              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-11/12 mt-5 placeholder:text-gray-300'
             />
           </div>
         </div>
