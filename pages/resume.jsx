@@ -37,7 +37,7 @@ const Resume = () => {
               key={course.number}
               href={course.link}
               target='_blank'
-              className='block text-xl font-thin mt-1'
+              className='block text-xl text-gray-300 font-thin mt-1'
             >
               {course.number}. {course.title}
             </a>
