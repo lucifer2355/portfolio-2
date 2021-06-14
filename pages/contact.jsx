@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
+import ContactCard from "../components/ContactCard";
 
 const contact = () => {
   const [name, setName] = useState("");
@@ -58,6 +59,10 @@ const contact = () => {
             >
               SEND MAIL
             </button>
+          </div>
+
+          <div>
+            <ContactCard />
           </div>
         </div>
       </div>
