@@ -14,7 +14,7 @@ const contact = () => {
   return (
     <>
       <MobileDrawer />
-      <div className='pl-4 pr-4 pt-1 mb-10'>
+      <div className='px-4 pt-1 mb-10'>
         <Title title='CONTACT ME' />
 
         <div className='mt-10'>

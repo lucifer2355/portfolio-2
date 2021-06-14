@@ -15,7 +15,7 @@ const Resume = () => {
   return (
     <>
       <MobileDrawer />
-      <div className='pl-4 pr-4 pt-1 mb-10'>
+      <div className='px-4 pt-1 mb-10'>
         <Title title='MY SKILL' />
         <Skills />
         <Title title='RESUME' />
