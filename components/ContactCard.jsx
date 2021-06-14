@@ -1,11 +1,12 @@
 import React from "react";
-import { MailIcon } from "@heroicons/react/outline";
+
+import { contacts } from "../data/contact/contact";
 
 const ContactCard = () => {
   return (
     <div className='bg-[#191D2B] py-5 px-5'>
       <div className='border border-[#A4ACC4] border-opacity-30 w-14 h-14 flex items-center justify-center'>
-        <MailIcon className='h-9' color='#A4ACC4' />
+        <MailIcon height={30} color='#A4ACC4' />
       </div>
       <h1 className='mt-2 text-lg'>Email</h1>
 
