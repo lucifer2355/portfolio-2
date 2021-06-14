@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import ContactCard from "../components/ContactCard";
+import { contacts } from "../data/contact/contact";
 
 const contact = () => {
   const [name, setName] = useState("");
@@ -24,21 +25,21 @@ const contact = () => {
               type='text'
               name='name'
               placeholder='Enter Your Name'
-              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              className='bg-[#10121B] border-gray-400 text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
               onChange={(e) => setName(e.target.value)}
             />
             <input
               type='email'
               name='email'
               placeholder='Enter Your Email'
-              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              className='bg-[#10121B] border-gray-400 text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type='text'
               name='subject'
               placeholder='Enter Your Subject'
-              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              className='bg-[#10121B] border-gray-400 text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
               onChange={(e) => setSubject(e.target.value)}
             />
             <textarea
@@ -46,7 +47,7 @@ const contact = () => {
               name='message'
               rows={5}
               placeholder='Enter Your Message'
-              className='bg-[#10121B] text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
+              className='bg-[#10121B] border-gray-400 text-gray-300 text-md font-medium border-2 rounded-lg pl-2 py-2 focus:outline-none w-full mt-5 placeholder:text-gray-300'
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
@@ -62,7 +63,13 @@ const contact = () => {
           </div>
 
           <div>
-            <ContactCard />
+            {contacts.map((contact) => (
+              <ContactCard
+                Icon={contact.Icon}
+                title={contact.title}
+                contactString={contact.contactString}
+              />
+            ))}
           </div>
         </div>
       </div>
