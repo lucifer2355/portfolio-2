@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 import BackgroundEffect from "../components/BackgroundEffect";
 import MobileDrawer from "../components/MobileDrawer";
+import facebookIcon from "../assets/svg/social/facebook.svg";
 
 export default function Home() {
   return (
@@ -31,6 +33,17 @@ export default function Home() {
             focusing on clean coding and morden, elegant mobile app &
             user-friendly website design.
           </p>
+
+          <div>
+            <div className='border-gray-400 border rounded-2xl py-1.5 px-1.5 flex justify-center items-center'>
+              <Image
+                src={facebookIcon}
+                height={18}
+                width={18}
+                onClick={() => window.open("https://facebook.com")}
+              />
+            </div>
+          </div>
         </div>
       </main>
     </div>
