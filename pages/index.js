@@ -5,6 +5,7 @@ import Image from "next/image";
 import BackgroundEffect from "../components/BackgroundEffect";
 import MobileDrawer from "../components/MobileDrawer";
 import facebookIcon from "../assets/svg/social/facebook.svg";
+import { socialLinks } from "../data/personal/socialLinks";
 
 export default function Home() {
   return (
@@ -34,15 +35,12 @@ export default function Home() {
             user-friendly website design.
           </p>
 
-          <div>
-            <div className='border-gray-400 border rounded-2xl py-1.5 px-1.5 flex justify-center items-center'>
-              <Image
-                src={facebookIcon}
-                height={18}
-                width={18}
-                onClick={() => window.open("https://facebook.com")}
-              />
-            </div>
+          <div className='mt-5 flex  w-6/12 justify-around cursor-pointer'>
+            {socialLinks.map((link) => (
+              <div className='border-gray-400 border rounded-2xl py-1.5 px-1.5 flex justify-center items-center'>
+                {link.Icon}
+              </div>
+            ))}
           </div>
         </div>
       </main>
