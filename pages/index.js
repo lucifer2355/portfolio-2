@@ -35,9 +35,9 @@ export default function Home() {
             user-friendly website design.
           </p>
 
-          <div className='mt-5 flex  w-6/12 justify-around cursor-pointer'>
+          <div className='mt-5 flex  w-6/12 justify-around '>
             {socialLinks.map((link) => (
-              <div className='border-gray-400 border rounded-2xl py-1.5 px-1.5 flex justify-center items-center'>
+              <div className='border-gray-400 border rounded-2xl py-1.5 px-1.5 flex justify-center items-center cursor-pointer'>
                 {link.Icon}
               </div>
             ))}
