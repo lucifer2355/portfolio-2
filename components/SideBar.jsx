@@ -6,7 +6,7 @@ import { navlinks } from "../data/navlinks/navlinks";
 
 const SideBar = () => {
   return (
-    <div className='bg-[#191D2B] w-3/12 border-r-2 border-gray-400 border-opacity-20 flex flex-col'>
+    <div className='bg-[#191D2B] w-3/12 border-r-2 border-gray-400 border-opacity-20 flex flex-col hidden md:hidden xl:block'>
       {/* Profile Image */}
       <div className='flex justify-center mt-8 border-b-2 border-gray-400 border-opacity-20 pb-5'>
         <div className='border-4 border-gray-400 border-opacity-20 rounded-full w-8/12 flex justify-center items-center'>
@@ -20,7 +20,7 @@ const SideBar = () => {
       </div>
 
       {/* Nav Links */}
-      <div className='flex justify-center items-center h-4/6 uppercase font-thin text-gray-300'>
+      <div className='flex justify-center items-center h-3/5 uppercase font-thin text-gray-300'>
         <ul className='space-y-4 w-full uppercase '>
           {navlinks.map((link) => (
             <li className='text-xl text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 cursor-pointer'>
@@ -31,8 +31,8 @@ const SideBar = () => {
       </div>
 
       {/* Social Link */}
-      <div className='border-t-2 border-gray-400 border-opacity-20 py-2'>
-        <h1 className='text-center text-gray-300'>DHRUVIL</h1>
+      <div className='border-t-2 border-gray-400 border-opacity-20'>
+        <h1 className='text-center text-gray-300 mt-7'>DHRUVIL</h1>
       </div>
     </div>
   );
