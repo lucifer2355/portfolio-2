@@ -6,6 +6,7 @@ import BackgroundEffect from "../components/BackgroundEffect";
 import MobileDrawer from "../components/MobileDrawer";
 import facebookIcon from "../assets/svg/social/facebook.svg";
 import { socialLinks } from "../data/personal/socialLinks";
+import SideBar from "../components/SideBar";
 
 export default function Home() {
   return (
@@ -17,8 +18,10 @@ export default function Home() {
       </Head>
 
       {/* <BackgroundEffect /> */}
-      <main className='relative'>
+      <main className='relative flex'>
         <MobileDrawer />
+
+        <SideBar />
 
         <div className='flex flex-col justify-center items-center h-screen'>
           <div className='text-4xl text-center font-[nunito-sans] md:flex'>
@@ -37,7 +40,7 @@ export default function Home() {
 
           <div className='mt-5 flex  w-6/12 justify-around '>
             {socialLinks.map((link) => (
-              <div className='border-gray-400 border rounded-2xl py-1.5 px-1.5 flex justify-center items-center cursor-pointer'>
+              <div className='border-gray-400 border rounded-full py-2 px-2 flex justify-center items-center cursor-pointer'>
                 {link.Icon}
               </div>
             ))}

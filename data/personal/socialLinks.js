@@ -12,8 +12,8 @@ export const socialLinks = [
     Icon: (
       <Image
         src={githubIcon}
-        height={18}
-        width={18}
+        height={19}
+        width={19}
         onClick={() => window.open("https://github.com/lucifer2355")}
       />
     ),
@@ -22,8 +22,8 @@ export const socialLinks = [
     Icon: (
       <Image
         src={linkedinIcon}
-        height={18}
-        width={18}
+        height={19}
+        width={19}
         onClick={() =>
           window.open("https://www.linkedin.com/in/dhruvil-gajjar/")
         }
@@ -34,8 +34,8 @@ export const socialLinks = [
     Icon: (
       <Image
         src={instagramIcon}
-        height={18}
-        width={18}
+        height={19}
+        width={19}
         onClick={() => window.open("https://www.instagram.com/lucifer_2355/")}
       />
     ),
@@ -44,8 +44,8 @@ export const socialLinks = [
     Icon: (
       <Image
         src={facebookIcon}
-        height={18}
-        width={18}
+        height={19}
+        width={19}
         onClick={() =>
           window.open("https://www.facebook.com/dhruvil.gajjar.505/")
         }
@@ -56,8 +56,8 @@ export const socialLinks = [
     Icon: (
       <Image
         src={twitterIcon}
-        height={18}
-        width={18}
+        height={19}
+        width={19}
         onClick={() => window.open("https://twitter.com/lucifer2355")}
       />
     ),
