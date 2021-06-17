@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 
 import BackgroundEffect from "../components/BackgroundEffect";
 import MobileDrawer from "../components/MobileDrawer";
-import facebookIcon from "../assets/svg/social/facebook.svg";
 import { socialLinks } from "../data/personal/socialLinks";
 import SideBar from "../components/SideBar";
 
@@ -20,7 +18,6 @@ export default function Home() {
       {/* <BackgroundEffect /> */}
       <main className='relative flex'>
         <MobileDrawer />
-
         <SideBar />
 
         <div className='flex flex-col justify-center items-center h-screen'>
