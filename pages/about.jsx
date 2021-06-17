@@ -5,11 +5,14 @@ import Title from "../components/Title";
 import aboutImage from "../assets/images/profile.jpeg";
 import PersonalInfo from "../components/PersonalInfo";
 import Services from "../components/Services";
+import SideBar from "../components/SideBar";
 
 const About = () => {
   return (
-    <>
+    <div className='flex'>
       <MobileDrawer />
+      <SideBar />
+
       <div className='px-4 pt-1 mb-10'>
         <Title title='ABOUT ME' />
 
@@ -59,7 +62,7 @@ const About = () => {
         <Title title='SERVICES' />
         <Services />
       </div>
-    </>
+    </div>
   );
 };
 
