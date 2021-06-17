@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
+import { navlinks } from "../data/navlinks/navlinks";
 
 const SideBar = () => {
   return (
@@ -17,7 +20,15 @@ const SideBar = () => {
       </div>
 
       {/* Nav Links */}
-      <div></div>
+      <div>
+        <ul>
+          {navlinks.map((link) => (
+            <li>
+              <Link href={link.link}>{link.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Social Link */}
       <div></div>
