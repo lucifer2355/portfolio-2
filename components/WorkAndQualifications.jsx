@@ -13,7 +13,7 @@ const WorkAndQualifications = ({ title, Icon, data }) => {
             key={index}
             className='w-11/12 mt-5 flex flex-col relative xl:flex-row'
           >
-            <span className='text-gray-400 text-lg before:empty-content before:bg-[#10121B] before:h-4 before:w-4 before:rounded-xl before:absolute before:-left-6.5 before:mt-1.5 before:border-4 before:border-[#2E344E] xl:w-1/3'>
+            <span className='text-gray-400 text-lg before:empty-content before:bg-[#10121B] before:h-4 before:w-4 before:rounded-xl before:absolute before:-left-6.5 before:mt-1.5 before:border-4 before:border-[#2E344E] xl:w-3/5'>
               {workExperience.timeLine}
             </span>
 

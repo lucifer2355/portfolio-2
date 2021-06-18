@@ -19,7 +19,9 @@ const ProjectCard = ({
             className='w-10/12'
           />
           <h1 className='text-2xl mt-2'>{projectTitle}</h1>
-          <h1 className='text-lg text-gray-400'>{projectDescription}</h1>
+          <h1 className='text-lg text-gray-400 text-justify'>
+            {projectDescription}
+          </h1>
         </>
       </a>
     </div>
