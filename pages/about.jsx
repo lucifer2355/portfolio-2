@@ -16,9 +16,9 @@ const About = () => {
       <div className='px-5 pt-1 mb-10 xl:w-5/6 xl:px-10 xl:pt-12'>
         <Title title='ABOUT ME' />
 
-        <div className='flex flex-col xl:flex-row xl:h-2/4 xl:pt-5 xl:-mb-20'>
+        <div className='flex flex-col xl:flex-row xl:h-screen xl:pt-5 xl:-mb-36'>
           <div
-            className='mt-12 h-80 xl:h-4/6 xl:w-6/12 flex justify-between'
+            className='mt-12 h-80 xl:h-3/5 xl:w-6/12 flex justify-between'
             style={{
               backgroundImage: `url(${aboutImage})`,
               backgroundSize: "cover",
