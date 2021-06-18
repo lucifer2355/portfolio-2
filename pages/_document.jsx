@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+
 import MobileDrawer from "../components/MobileDrawer";
+import SideBar from "../components/SideBar";
 
 export default class CustomDocument extends Document {
   render() {
@@ -12,7 +14,8 @@ export default class CustomDocument extends Document {
             rel='stylesheet'
           />
         </Head>
-        <body>
+        <body className='flex'>
+          <SideBar />
           <Main />
         </body>
         <NextScript />

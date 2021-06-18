@@ -5,11 +5,11 @@ import { services } from "../data/services/services";
 
 const Services = () => {
   return (
-    <div className='mt-12'>
+    <div className='mt-12 relative'>
       {services.map((service) => (
         <div
           className={
-            "mt-6 border border-[#2E344E] border-t-4 bg-[#191D2B]  rounded-sm pr-5 pl-5 pt-5 pb-5 hover:border-blue-600"
+            "mt-6 border border-[#2E344E] border-t-4 bg-[#191D2B]  rounded-sm py-5 px-10 hover:border-blue-600"
           }
         >
           <Image src={service.icon} width={40} height={40} color='text-white' />

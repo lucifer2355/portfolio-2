@@ -10,14 +10,13 @@ import SideBar from "../components/SideBar";
 const About = () => {
   return (
     <div className='flex'>
-      <MobileDrawer />
-      <SideBar />
+      {/* <SideBar /> */}
 
-      <div className='px-4 pt-1 mb-10'>
+      <div className='px-0 pt-1 mb-10'>
         <Title title='ABOUT ME' />
 
         <div
-          className='mt-12 h-80 flex justify-between'
+          className='mt-12 h-80 xl:w-6/12 flex justify-between'
           style={{
             backgroundImage: `url(${aboutImage})`,
             backgroundSize: "cover",
