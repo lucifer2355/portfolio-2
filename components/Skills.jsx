@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div className='mt-10 xl:grid xl:grid-cols-2 xl:space-x-5'>
       {skills.map((skill) => (
-        <div className='mt-5 first:ml-5'>
+        <div className='mt-5 xl:first:ml-5'>
           <h1 className='text-xl font-bold'>{skill.title}</h1>
           <div className='relative pt-1 flex'>
             <span className='w-10 font-thin text-gray-400'>

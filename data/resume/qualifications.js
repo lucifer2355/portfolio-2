@@ -1,8 +1,8 @@
 export const qualifications = [
   {
     timeLine: "2016 - 2020",
-    title: "B.Tech (Information & Technology",
-    organization: "Gyanmanjari Institute od Technology",
+    title: "B.Tech (Information & Technology)",
+    organization: "Gyanmanjari Institute of Technology",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
   },
