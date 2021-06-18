@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { BriefcaseIcon } from "@heroicons/react/outline";
 
-import bookSvg from "../assets/svg/book.svg";
 import MobileDrawer from "../components/MobileDrawer";
+import SideBar from "../components/SideBar";
+import bookSvg from "../assets/svg/book.svg";
 import Title from "../components/Title";
 import Skills from "../components/Skills";
 import WorkAndQualifications from "../components/WorkAndQualifications";
@@ -13,9 +14,11 @@ import { courses } from "../data/resume/courses";
 
 const Resume = () => {
   return (
-    <>
+    <div className='flex'>
       <MobileDrawer />
-      <div className='px-4 pt-1 mb-10'>
+      <SideBar />
+
+      <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10'>
         <Title title='MY SKILL' />
         <Skills />
         <Title title='RESUME' />
@@ -44,7 +47,7 @@ const Resume = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
