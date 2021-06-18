@@ -10,9 +10,10 @@ import SideBar from "../components/SideBar";
 const About = () => {
   return (
     <div className='flex'>
-      {/* <SideBar /> */}
+      <MobileDrawer />
+      <SideBar />
 
-      <div className='px-0 pt-1 mb-10'>
+      <div className='px-5 pt-1 mb-10 xl:w-5/6 xl:px-10'>
         <Title title='ABOUT ME' />
 
         <div
