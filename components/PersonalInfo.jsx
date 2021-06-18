@@ -7,11 +7,11 @@ const PersonalInfo = () => {
     <div className='mt-4'>
       {Object.keys(personalData).map(function(key, index) {
         return (
-          <div key={index} className='text-gray-400 flex'>
-            <span className='flex w-24 justify-between'>
+          <div key={index} className='flex'>
+            <span className='flex w-24 justify-between text-lg text-gray-400 font-bold'>
               {key} <span>:</span>
             </span>
-            <span className='ml-2'>{personalData[key]}</span>
+            <span className='ml-2 text-gray-400'>{personalData[key]}</span>
           </div>
         );
       })}
