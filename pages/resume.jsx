@@ -21,6 +21,7 @@ const Resume = () => {
       <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10'>
         <Title title='MY SKILL' />
         <Skills />
+
         <Title title='RESUME' />
         <WorkAndQualifications
           title='Working Experience'
