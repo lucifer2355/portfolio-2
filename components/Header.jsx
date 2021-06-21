@@ -35,9 +35,9 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
                 <li
                   key={index}
                   className={`text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500  ${
-                    router.pathname.slice(1) === link.title.toLowerCase()
-                      ? "text-blue-400"
-                      : "text-gray-300"
+                    router.pathname === link.link
+                      ? "text-white bg-[#047FFF]"
+                      : "text-gray-400"
                   }`}
                 >
                   <Link href={link.link}>{link.title}</Link>
