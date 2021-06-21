@@ -69,7 +69,7 @@ const contact = () => {
             </div>
           </div>
 
-          <div className='xl:w-2/5 xl:flex xl:flex-col justify-center xl:mb-6'>
+          <div className='xl:w-2/5 xl:mt-10'>
             {contacts.map((contact) => (
               <ContactCard
                 Icon={contact.Icon}
