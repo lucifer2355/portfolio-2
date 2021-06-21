@@ -1,10 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { navlinks } from "../data/navlinks/navlinks";
 
 const SideBar = () => {
+  const router = useRouter();
+
+  if (router.pathname === "/") {
+    console.log("hello");
+  }
+
   return (
     <div className='bg-[#191D2B] w-1/6 border-r-2 border-gray-400 border-opacity-20 flex flex-col hidden md:hidden xl:block h-screen'>
       {/* Profile Image */}
@@ -20,10 +27,17 @@ const SideBar = () => {
       </div>
 
       {/* Nav Links */}
-      <div className='flex justify-center items-center h-3/5 uppercase font-thin text-gray-300'>
-        <ul className='space-y-4 w-full uppercase '>
-          {navlinks.map((link) => (
-            <li className='text-xl text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 cursor-pointer'>
+      <div className='flex justify-center items-center h-3/5 uppercase font-thin'>
+        <ul className='space-y-4 w-full uppercase'>
+          {navlinks.map((link, index) => (
+            <li
+              key={index}
+              className={`text-xl text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 cursor-pointer ${
+                router.pathname === link.link
+                  ? "text-white bg-[#047FFF]"
+                  : "text-gray-400"
+              }`}
+            >
               <Link href={link.link}>{link.title}</Link>
             </li>
           ))}

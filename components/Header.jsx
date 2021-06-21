@@ -29,16 +29,16 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
             </div>
           </div>
 
-          <div className='w-full h-screen flex items-center text-lg uppercase font-thin text-gray-300 cursor-pointer inline-block'>
+          <div className='w-full h-screen flex items-center text-lg uppercase font-thin cursor-pointer inline-block'>
             <ul className='flex flex-col text-justify space-y-4 w-full'>
-              {navlinks.map((link) => (
+              {navlinks.map((link, index) => (
                 <li
-                  className='text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100'
-                  style={
+                  key={index}
+                  className={`text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500  ${
                     router.pathname.slice(1) === link.title.toLowerCase()
-                      ? { color: "blue" }
-                      : { color: "red" }
-                  }
+                      ? "text-blue-400"
+                      : "text-gray-300"
+                  }`}
                 >
                   <Link href={link.link}>{link.title}</Link>
                 </li>
@@ -58,3 +58,5 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
 };
 
 export default Header;
+
+// after:contents after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:scale-x-0 after:origin-left after:bg-blue-500 after:z-[-1] after:transition-transform after:delay-300 after:hover:scale-x-100
