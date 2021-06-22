@@ -18,7 +18,7 @@ const Resume = () => {
       <MobileDrawer />
       <SideBar />
 
-      <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10'>
+      <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10 xl:ml-1.6'>
         <Title title='MY SKILL' />
         <Skills />
 

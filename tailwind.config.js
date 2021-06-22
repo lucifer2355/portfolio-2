@@ -12,6 +12,9 @@ module.exports = {
       inset: {
         "-6.5": "-1.6rem",
       },
+      margin: {
+        "1.6": "16.666667%",
+      },
     },
     fontFamily: {
       nunito: ["nunito-sans"],

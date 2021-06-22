@@ -17,7 +17,7 @@ const contact = () => {
       <MobileDrawer />
       <SideBar />
 
-      <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10'>
+      <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10 xl:ml-1.6'>
         <Title title='CONTACT ME' />
 
         <div className='mt-10 flex space-x-4'>
@@ -70,8 +70,9 @@ const contact = () => {
           </div>
 
           <div className='xl:w-2/5 xl:mt-10'>
-            {contacts.map((contact) => (
+            {contacts.map((contact, index) => (
               <ContactCard
+                key={index}
                 Icon={contact.Icon}
                 title={contact.title}
                 contactString={contact.contactString}

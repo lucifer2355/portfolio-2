@@ -13,7 +13,7 @@ const About = () => {
       <MobileDrawer />
       <SideBar />
 
-      <div className='px-5 pt-1 mb-10 xl:w-5/6 xl:px-10 xl:pt-12'>
+      <div className='px-5 pt-1 mb-10 xl:w-5/6 xl:px-10 xl:pt-12 xl:ml-1.6'>
         <Title title='ABOUT ME' />
 
         <div className='flex flex-col xl:flex-row xl:h-screen xl:pt-5 xl:-mb-36'>
