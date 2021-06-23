@@ -8,15 +8,8 @@ import { navlinks } from "../data/navlinks/navlinks";
 const SideBar = () => {
   const router = useRouter();
 
-  if (router.pathname === "/") {
-    console.log("hello");
-  }
-
   return (
-    <div
-      className='bg-[#191D2B] w-1/6 border-r-2 border-gray-400 border-opacity-20 flex flex-col hidden md:hidden xl:block h-screen fixed'
-      
-    >
+    <div className='bg-[#191D2B] w-1/6 border-r-2 border-gray-400 border-opacity-20 flex flex-col hidden md:hidden xl:block h-screen fixed'>
       {/* Profile Image */}
       <div className='flex justify-center mt-8 border-b-2 border-gray-400 border-opacity-20 pb-5'>
         <div className='border-4 border-gray-400 border-opacity-20 rounded-full w-8/12 flex justify-center items-center'>
