@@ -6,5 +6,6 @@
   body {
     @apply bg-[#10121B] text-white;
     @apply font-nunito;
+    @apply scrollbar-hide;
   }
 }
