@@ -35,17 +35,24 @@ const Resume = () => {
         />
 
         <Title title='COURSES' />
-        <div className='mt-10'>
-          {courses.map((course) => (
-            <a
-              key={course.number}
-              href={course.link}
-              target='_blank'
-              className='block text-xl text-gray-300 font-thin mt-1 w-auto hover:text-blue-500'
-            >
-              {course.number}. {course.title}
-            </a>
-          ))}
+        <div className='mt-10 xl:text-center'>
+          <ul className='inline'>
+            {courses.map((course) => (
+              <li
+                key={course.number}
+                className='block pl-2 xl:pl-0 xl:inline pr-2 hover:text-blue-500'
+              >
+                <a
+                  href={course.link}
+                  target='_blank'
+                  className='inline text-xl text-gray-300 font-thin mt-1 w-auto '
+                >
+                  <h1 className='inline font-bold'>{`${course.number}: `}</h1>
+                  <p className='inline text-gray-400'>{` ${course.title}`}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
