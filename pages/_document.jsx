@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 export default class CustomDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html className='overflow-hidden h-full relative'>
         <Head>
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
@@ -11,7 +11,7 @@ export default class CustomDocument extends Document {
             rel='stylesheet'
           />
         </Head>
-        <body>
+        <body className='overflow-auto h-full relative'>
           <Main />
         </body>
         <NextScript />
