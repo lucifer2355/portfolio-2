@@ -4,7 +4,7 @@ import { skills } from "../data/resume/skills";
 
 const Skills = () => {
   return (
-    <div className='mt-10 xl:grid xl:grid-cols-2 xl:space-x-5'>
+    <div className='mt-5 xl:grid xl:grid-cols-2 xl:space-x-5'>
       {skills.map((skill) => (
         <div className='mt-5 xl:first:ml-5'>
           <h1 className='text-xl font-bold'>{skill.title}</h1>

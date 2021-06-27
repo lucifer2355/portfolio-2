@@ -11,9 +11,13 @@ module.exports = {
       },
       inset: {
         "-6.5": "-1.6rem",
+        5.5: "1.80rem",
       },
       margin: {
-        "1.6": "16.666667%",
+        1.6: "16.666667%",
+      },
+      colors: {
+        textShadow: "#131722",
       },
     },
     fontFamily: {
