@@ -1,13 +1,14 @@
 export const projects = [
   {
+    id: 1,
     title: "Phonix",
     subtitle: "Video Streaming Application",
     image: require("../../assets/projects/phonix.jpg"),
     date: "2020-11",
-    desc:
-      "Phonix is a video streaming cross-platform mobile application. User can stream their favorit shows & movies. User also can download it",
+    desc: "Phonix is a video streaming cross-platform mobile application. User can stream their favorit shows & movies. User also can download it",
   },
   {
+    id: 2,
     title: "AI News",
     subtitle: "ai news website",
     link: "https://geekybot.com/",
@@ -20,6 +21,7 @@ export const projects = [
       "for AI part I'm using Alan AI and for frontend React.js & Metrial UI.",
   },
   {
+    id: 3,
     title: "walkMapper",
     subtitle: "New York Government Application",
     // link: "https://devpost.com/software/harvest",
@@ -31,6 +33,7 @@ export const projects = [
       "and government also store the problem.",
   },
   {
+    id: 4,
     title: "Done With It",
     subtitle: "New York Government Application",
     link: "https://github.com/lucifer2355/pinterest",
@@ -41,6 +44,7 @@ export const projects = [
       "This app is for selling your old or unused things.",
   },
   {
+    id: 6,
     title: "Khelmanjari",
     subtitle: "2019/20 College spots event",
     link: "http://khelmanjari.gmit.edu.in/",
@@ -52,15 +56,16 @@ export const projects = [
       "This site is work as portal. In this site show live scrore, spots schedule, game rules.",
   },
   {
+    id: 7,
     title: "Natours",
     subtitle: "Natours",
     link: "https://toursbook.netlify.app/",
     image: require("../../assets/projects/natours.png"),
     date: "2020-08-10",
-    desc:
-      "This is single page wesite. It's a tour booking related website design. I make this website using react.js + SCSS. This website is part of learning SASS & React",
+    desc: "This is single page wesite. It's a tour booking related website design. I make this website using react.js + SCSS. This website is part of learning SASS & React",
   },
   {
+    id: 8,
     title: "Shopping Application",
     subtitle: "Basic shopping application.",
     link: "https://github.com/lucifer2355/shop-app",
@@ -72,6 +77,7 @@ export const projects = [
       "Cart option is also available .",
   },
   {
+    id: 9,
     title: "To Do List",
     subtitle: "Task Manager Application",
     link: "https://github.com/lucifer2355/toDoList",

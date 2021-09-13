@@ -18,6 +18,7 @@ const portfolio = () => {
         <div className='grid md:grid-cols-2 md:space-x-5 xl:grid-cols-3 xl:space-x-5'>
           {projects.map((project) => (
             <ProjectCard
+              key={project.id}
               imageURL={project.image}
               projectURL={project.link}
               projectTitle={project.title}
