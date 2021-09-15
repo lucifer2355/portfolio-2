@@ -39,10 +39,9 @@ const About = () => {
             </h1>
             <p className='text-gray-400 text-justify font-mono mt-2 xl:text-lg'>
               I’m a Web & Mobile App developer, from India. Middle of my college
-              degree in "Information & Technology", I got a job as a
-              "developer", where I stayed for almost 2 years, and I developed
-              websites with Magento, developed mobile applications with
-              React-Native.
+              degree in "Information & Technology", I got a job as a "SOFTWARE
+              DEVELOPER", where I stayed for almost 2.4 years, and I developed
+              websites with Magento, mobile applications with React-Native.
             </p>
 
             <PersonalInfo />

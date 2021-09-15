@@ -15,9 +15,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <BackgroundEffect />   
+      {/* <BackgroundEffect /> */}
       <main>
-        <div className='flex'>
+        <div className='flex z-10'>
           <MobileDrawer />
           <SideBar />
 
