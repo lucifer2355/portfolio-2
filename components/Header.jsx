@@ -16,9 +16,9 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
         onClose={drawerToggle}
         className='xl:hidden focus:outline-none'
       >
-        <div className='bg-[#10121B] h-screen border-r-2 w-60 border-gray-400 border-opacity-20 flex flex-col items-center'>
+        <div className='bg-[#10121B] h-screen border-r-2 w-60 border-gray-400 border-opacity-20  flex flex-col items-center'>
           <div className='mt-10 pb-8 w-full border-b-2 border-gray-400 border-opacity-20 flex  justify-center'>
-            <div className='border-gray-400 border-4 border-opacity-10 rounded-full p-1 pb-0'>
+            <div className='border-gray-400 border-4 border-opacity-10 rounded-full p-1 flex justify-center'>
               <Image
                 layout='fixed'
                 src={require("../assets/images/me.png")}
@@ -29,12 +29,12 @@ const Header = ({ open, drawerToggle, drawerHandler }) => {
             </div>
           </div>
 
-          <div className='w-full h-screen flex items-center text-lg uppercase font-thin cursor-pointer inline-block'>
-            <ul className='flex flex-col text-justify space-y-4 w-full'>
+          <div className='w-full h-screen flex items-center text-lg uppercase font-thin inline-block '>
+            <ul className='flex-col text-justify justify-items-center space-y-4 w-full'>
               {navlinks.map((link, index) => (
                 <li
                   key={index}
-                  className={`text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500  ${
+                  className={`text-center hover:bg-opacity-20 hover:text-opacity-100 hover:text-blue-500 cursor-pointer  ${
                     router.pathname === link.link
                       ? "text-white bg-[#047FFF]"
                       : "text-gray-400"
