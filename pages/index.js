@@ -18,9 +18,6 @@ export default function Home() {
       {/* <BackgroundEffect /> */}
       <main>
         <div className='flex z-10'>
-          <MobileDrawer />
-          <SideBar />
-
           <div className='flex flex-col justify-center items-center h-screen xl:w-5/6 xl:ml-1.6'>
             <div className='text-4xl text-center font-[nunito-sans] md:flex xl:text-5xl'>
               <h1 className='md:mr-2'>Hi, I am</h1>

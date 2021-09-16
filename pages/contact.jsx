@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import MobileDrawer from "../components/MobileDrawer";
-import SideBar from "../components/SideBar";
 import Title from "../components/Title";
 import ContactCard from "../components/ContactCard";
 import { contacts } from "../data/contact/contact";
@@ -14,9 +12,6 @@ const contact = () => {
 
   return (
     <div className='flex'>
-      <MobileDrawer />
-      <SideBar />
-
       <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10 xl:ml-1.6'>
         <Title title='CONTACT ME' />
 

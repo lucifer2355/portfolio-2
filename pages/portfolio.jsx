@@ -1,7 +1,5 @@
 import React from "react";
 
-import MobileDrawer from "../components/MobileDrawer";
-import SideBar from "../components/SideBar";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/portfolio/projects";
@@ -9,9 +7,6 @@ import { projects } from "../data/portfolio/projects";
 const portfolio = () => {
   return (
     <div className='flex'>
-      <MobileDrawer />
-      <SideBar />
-
       <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 pt-1 mb-10 xl:ml-1.6'>
         <Title title='PORTFOLIOS' />
 

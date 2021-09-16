@@ -1,18 +1,13 @@
 import React from "react";
 
-import MobileDrawer from "../components/MobileDrawer";
 import Title from "../components/Title";
 import aboutImage from "../assets/images/profile.jpeg";
 import PersonalInfo from "../components/PersonalInfo";
 import Services from "../components/Services";
-import SideBar from "../components/SideBar";
 
 const About = () => {
   return (
     <div className='flex'>
-      <MobileDrawer />
-      <SideBar />
-
       <div className='px-5 pt-1 mb-10 xl:w-5/6 xl:px-10 xl:pt-12 xl:ml-1.6'>
         <Title title='ABOUT ME' />
 

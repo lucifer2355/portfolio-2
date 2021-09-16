@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { BriefcaseIcon } from "@heroicons/react/outline";
 
-import MobileDrawer from "../components/MobileDrawer";
-import SideBar from "../components/SideBar";
 import bookSvg from "../assets/svg/book.svg";
 import Title from "../components/Title";
 import Skills from "../components/Skills";
@@ -15,9 +13,6 @@ import { courses } from "../data/resume/courses";
 const Resume = () => {
   return (
     <div className='flex'>
-      <MobileDrawer />
-      <SideBar />
-
       <div className='flex flex-col xl:w-5/6 xl:px-10 px-4 mb-10 xl:ml-1.6'>
         <Title title='MY SKILL' />
         <Skills />
