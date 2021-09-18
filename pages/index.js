@@ -1,10 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import BackgroundEffect from "../components/BackgroundEffect";
-import MobileDrawer from "../components/MobileDrawer";
 import { socialLinks } from "../data/personal/socialLinks";
-import SideBar from "../components/SideBar";
 
 export default function Home() {
   return (
@@ -15,9 +12,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      {/* <BackgroundEffect /> */}
       <main>
-        <div className='flex z-10'>
+        <div
+          className='flex z-10'
+          style={{ backgroundImage: 'url("../assets/svg/background.svg")' }}
+        >
           <div className='flex flex-col justify-center items-center h-screen xl:w-5/6 xl:ml-1.6'>
             <div className='text-4xl text-center font-[nunito-sans] md:flex xl:text-5xl'>
               <h1 className='md:mr-2'>Hi, I am</h1>

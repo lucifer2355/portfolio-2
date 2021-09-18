@@ -5,12 +5,12 @@ import SideBar from "./SideBar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <React.Fragment>
       <MobileDrawer />
       <SideBar />
 
       {children}
-    </div>
+    </React.Fragment>
   );
 };
 
