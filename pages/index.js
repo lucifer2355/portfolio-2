@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
+import backgroundImage from "../assets/svg/background.svg";
 import { socialLinks } from "../data/personal/socialLinks";
 
 export default function Home() {
@@ -14,8 +15,8 @@ export default function Home() {
 
       <main>
         <div
-          className='flex z-10'
-          style={{ backgroundImage: 'url("../assets/svg/background.svg")' }}
+          className='flex'
+          style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <div className='flex flex-col justify-center items-center h-screen xl:w-5/6 xl:ml-1.6'>
             <div className='text-4xl text-center font-[nunito-sans] md:flex xl:text-5xl'>
