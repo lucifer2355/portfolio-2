@@ -11,7 +11,7 @@ export default class CustomDocument extends Document {
             rel='stylesheet'
           />
         </Head>
-        <body className='overflow-auto relative'>
+        <body className='overflow-auto h-full relative'>
           <Main />
         </body>
         <NextScript />

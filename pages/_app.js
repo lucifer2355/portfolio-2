@@ -1,11 +1,14 @@
 import "../styles/globals.css";
-import Layout from "../components/Layout";
+import MobileDrawer from "../components/MobileDrawer";
+import SideBar from "../components/SideBar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <>
+      <MobileDrawer />
+      <SideBar />
       <Component {...pageProps} />;
-    </Layout>
+    </>
   );
 }
 
