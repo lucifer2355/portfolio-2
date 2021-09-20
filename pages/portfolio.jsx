@@ -1,11 +1,17 @@
 import React from "react";
 import Head from "next/head";
+import { gql } from "@apollo/client";
 
+import client from "../apolloClient";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
-import { projects } from "../data/portfolio/projects";
+// import { projects } from "../data/portfolio/projects";
 
-const portfolio = () => {
+const portfolio = ({ projects }) => {
+  console.log("====================================");
+  console.log(projects);
+  console.log("====================================");
+
   return (
     <>
       <Head>
@@ -22,10 +28,10 @@ const portfolio = () => {
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
-                imageURL={project.image}
-                projectURL={project.link}
-                projectTitle={project.title}
-                projectDescription={project.desc}
+                imageURL={project.projectImage.url}
+                projectURL={project.projectURL}
+                projectTitle={project.projectName}
+                projectDescription={project.projectDescription.text}
               />
             ))}
           </div>
@@ -36,3 +42,32 @@ const portfolio = () => {
 };
 
 export default portfolio;
+
+export async function getStaticProps() {
+  const { data } = await client.query({
+    query: gql`
+      query {
+        projects {
+          id
+          projectName
+          projectDescription {
+            text
+          }
+          projectImage {
+            url
+          }
+          projectURL
+          projectSourceCode
+        }
+      }
+    `,
+  });
+
+  const { projects } = data;
+
+  return {
+    props: {
+      projects,
+    },
+  };
+}
