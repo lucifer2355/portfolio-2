@@ -5,13 +5,8 @@ import { gql } from "@apollo/client";
 import client from "../apolloClient";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
-// import { projects } from "../data/portfolio/projects";
 
 const portfolio = ({ projects }) => {
-  console.log("====================================");
-  console.log(projects);
-  console.log("====================================");
-
   return (
     <>
       <Head>
