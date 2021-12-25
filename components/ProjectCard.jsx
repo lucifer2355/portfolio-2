@@ -5,6 +5,7 @@ import { LinkIcon, CodeIcon } from "@heroicons/react/outline";
 const ProjectCard = ({
   imageURL,
   projectURL,
+  projectSourceCodeURL,
   projectTitle,
   projectDescription,
 }) => {
@@ -24,23 +25,24 @@ const ProjectCard = ({
         </h1>
       </div>
 
-      {projectURL && (
-        <div className='flex justify-between items-center px-5 mt-3 text-blue-500 text-opacity-100'>
+      <div className='flex justify-between items-center px-5 mt-3 text-blue-500 text-opacity-100'>
+        {projectURL && (
           <a target='_blank' className='flex' href={projectURL}>
             <>
               <LinkIcon width={15} className='mr-1' />
               Visit
             </>
           </a>
-
-          <a href='' className='flex'>
+        )}
+        {projectSourceCodeURL && (
+          <a href={projectSourceCodeURL} target='_blank' className='flex'>
             <>
               <CodeIcon width={15} className='mr-1' />
               Source
             </>
           </a>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

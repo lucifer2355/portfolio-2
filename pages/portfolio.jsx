@@ -25,6 +25,7 @@ const portfolio = ({ projects }) => {
                 key={project.id}
                 imageURL={project.projectImage.url}
                 projectURL={project.projectURL}
+                projectSourceCodeURL={project.projectSourceCode}
                 projectTitle={project.projectName}
                 projectDescription={project.projectDescription.text}
               />
