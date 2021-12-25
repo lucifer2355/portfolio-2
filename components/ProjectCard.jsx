@@ -25,9 +25,9 @@ const ProjectCard = ({
         </h1>
       </div>
 
-      <div className='flex justify-between items-center px-5 mt-3 text-blue-500 text-opacity-100'>
+      <div className='px-5 mt-3 text-blue-500 text-opacity-100'>
         {projectURL && (
-          <a target='_blank' className='flex' href={projectURL}>
+          <a target='_blank' className='flex float-left' href={projectURL}>
             <>
               <LinkIcon width={15} className='mr-1' />
               Visit
@@ -35,7 +35,11 @@ const ProjectCard = ({
           </a>
         )}
         {projectSourceCodeURL && (
-          <a href={projectSourceCodeURL} target='_blank' className='flex'>
+          <a
+            href={projectSourceCodeURL}
+            target='_blank'
+            className='flex float-right'
+          >
             <>
               <CodeIcon width={15} className='mr-1' />
               Source
